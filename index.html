@@ -54,11 +54,12 @@
      };
       </script>
   <script>
+   var randomUsers = ['Default', 'Silver', 'Gold']
    var dataLayer = {
 loggedIn : true,
 username : "mohitanim@gmail.com",
 pagename:'Home page',
-memberType:'Default'
+memberType: randomUsers[Math.floor(Math.random() * randomUsers.length)]
 }
 
 
