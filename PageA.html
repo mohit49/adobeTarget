@@ -54,12 +54,13 @@
      };
       </script>
       <script>
-         var dataLayer = {
-      loggedIn : true,
-      username : "mohitanim@gmail.com",
-      pagename:'Silver Page',
-      memberType:'Silver'
-      }
+      var dataLayer = {
+loggedIn : true,
+username : "mohitanim@gmail.com",
+pagename:'Home page',
+memberType: window.location.search.length > 0 ? window.location.search.split('=')[1] : 'Default',
+loginStatus: window.location.search.length > 0 ? window.location.search.replace('?','') : 'logout'
+}
       
       console.log('mohit')
       </script>
