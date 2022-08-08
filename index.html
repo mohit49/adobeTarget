@@ -59,7 +59,8 @@
 loggedIn : true,
 username : "mohitanim@gmail.com",
 pagename:'Home page',
-memberType: window.location.search.length > 0 ? window.location.search.split('=')[1] : 'Default' 
+memberType: window.location.search.length > 0 ? window.location.search.split('=')[1] : 'Default',
+loginStatus: window.location.search.length > 0 ? window.location.search.replace('?') : 'logout'
 }
 
 
